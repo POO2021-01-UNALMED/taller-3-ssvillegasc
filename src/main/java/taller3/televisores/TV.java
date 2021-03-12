@@ -3,7 +3,7 @@ package taller3.televisores;
 public class TV {
 	private Marca marca;
 	private int canal = 1;
-	private int precio = 1;
+	private int precio = 500;
 	private int volumen = 1;
 	private boolean estado;
 	private Control control;
@@ -13,6 +13,7 @@ public class TV {
 	public TV(Marca marca, boolean estado) {
 		this.marca = marca;
 		this.estado = estado;
+		TV.numTV++;
 	}
 
 	public Marca getMarca() {
